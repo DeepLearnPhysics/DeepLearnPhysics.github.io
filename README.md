@@ -5,7 +5,7 @@ The `develop` branch holds source code to generate the website.
 
 ### How to contribute
 For aweome you to help development, follow the following steps
-1. Join web-main github team
+1. Join [web-main](https://github.com/orgs/DeepLearnPhysics/teams/web-main) github team
 2. Install [Pelican](http://docs.getpelican.com/en/stable/) ... here's [quick start](http://docs.getpelican.com/en/stable/quickstart.html#).
 3. Clone the repo: `git clone git@github.com:DeepLearnPhysics/DeepLearnPhysics.github.io`
 
