@@ -1,3 +1,5 @@
 *.dat
 *.root
 *#
+*.pyc
+output
