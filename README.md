@@ -25,9 +25,9 @@ Finally, to make modification & test:
 Note that `output` directory holds locally generated static HTML files. `output` directory is excluded from `develop` branch via `.gitignore` intentionally.
 Ready to publish? Here are the steps.
 
-8. Commit & push your change to `develop` branch. If you did step 7, `undo` it.
+8. If you did step 5, `make stopserver`. If you did step 7, `undo` it. Then commit & push your change to `develop` branch. 
 9. Make sure `develop` branch has no modifications by `git status`.
-10. `git checkout master`, then `cp output/* ./` (this simply replaces the old page source with your new ones)
+10. `git checkout master`, then `cp -r output/* ./` (this simply replaces the old page source with your new ones)
 11. `git add .` && `git commit -m "updated"` && `git push`
 
 Done!
