@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'drinkingkazu'
 SITENAME = u'DeepLearnPhysics'
-SITEURL = 'https://deeplearnphysics.org'
+SITEURL = 'http://deeplearnphysics.org'
 #SITEURL = '' #uncomment for local development
 PATH = 'content'
 
