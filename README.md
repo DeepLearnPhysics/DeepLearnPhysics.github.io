@@ -13,7 +13,7 @@ For aweome you to help development, follow the following steps. I split into thr
 
 ### Installation
 1. Join [web-blog](https://github.com/orgs/DeepLearnPhysics/teams/web-main) github team
-2. Clone the repo: `git clone git@github.com:DeepLearnPhysics/Blog`.
+2. Clone the repo: `git clone git@github.com:DeepLearnPhysics/DeepLearnPhysics.github.io`.
 3. Make sure you are on the `develop` branch by `git branch`
 ### Compilation
 By compilation we mean to generate static HTMLs. This is fairly simple:
