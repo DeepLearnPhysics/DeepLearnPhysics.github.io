@@ -14,7 +14,44 @@
   <div class="content-wrapper">
       <div class="content-wrapper__inner">
           <h1 id="introduction">Introduction</h1>
-          Say hello!
+          <p>
+            We are a group of experimental particle physicists interested in the application of modern machine learning (ML) techniques to analyze experimental physics data. Our research focus (details below) include geometrical pattern recognition for particle imaging detectors, understanding data/simulation discrepancies in altorithm response, and estimating uncertainties in ML applications.
+          </p>
+      </div>
+
+
+      <div class="content-wrapper__inner">
+          <h1 id="research">Research</h1>
+          <p>
+            We are interested in a particular type of detectors called 
+            <a href="https://en.wikipedia.org/wiki/Time_projection_chamber">time projection chambers (TPCs)</a>
+            that allow 2D or 3D <i>"imaging"</i> of charged particle trajectories. While TPCs are very powerful detectors to capture geometrical details of particle interactions with calorimetric (energy deposition) information, understanding the detector response and analyzing its complex and highly detailed (= huge in size) data is challenging. <strong>Our goal</strong> is to leverage ML techniques, in particular deep neural networks, for TPC data reconstruction and analysis. As a part of 
+            <a href="http://microboone.fnal.gov">MicroBooNE</a> experiment effort, we published our 
+            <a href="https://arxiv.org/abs/1611.05531">first study</a> that shows a strong promise of ML technique for attacking. Moving forward, we are developing more advanced reconstruction techniques using deep neural networks beyond our first result.
+          </p>
+
+         <p>
+            We are keen to share our work in public. You can find our active software development in 
+            <a href="{{ GITHUBURL }}">public repository</a>, and we also make most of our data set
+            <a href="{{ DATAURL }}"> available in public</a>. Finally but not the least, we often post interesting findings on our
+            <a href="{{ BLOGURL }}"> blog</a> using publicly available data set. All of these effort is aimed to improve the reproducibility and transparency of our research.
+         </p>
+      </div>
+
+      <div class="content-wrapper__inner">
+          <h1 id="about">About us</h1>
+          <p>
+            Our group consists of physicists at many levels (students, post-docs, lab scientists and faculties) and we are keen to share development effort in all aspects of the research, from software tools and algorithms to high level physics analysis methods.
+            Experiments our group members are involved include  
+            <a href="http://microboone.fnal.gov">MicroBooNE</a>, <a href="http://sbn-nd.fnal.gov">SBND</a>, 
+            <a href="http://icarustrip.fnal.gov/about-icarus/">ICARUS</a>, <a href="http://next.ific.uv.es/next/">NEXT</a>,
+            and <a href="http://www.dunescience.org">DUNE</a>. 
+         </p>
+
+          <p>
+            Your inputs are very much welcome to improve any aspect of our effort, so please feel free to <a href={{ CONTACT }}> contact us</a>. You are welcome to join our group and/or participate in  our 
+           <a href="https://groups.google.com/forum/#!forum/deeplearnphysics"> mailing list</a>!
+          </p>
       </div>
 
 {% include 'body-footer.html'%}

@@ -4,8 +4,12 @@ from __future__ import unicode_literals
 
 AUTHOR = u'drinkingkazu'
 SITENAME = u'DeepLearnPhysics'
+GITHUBURL = 'https://github.com/DeepLearnPhysics'
+CONTACT = 'mailto:contact@deeplearnphysics.org'
 SITEURL = 'https://deeplearnphysics.org'
-#SITEURL = '' #uncomment for local development
+BLOGURL = SITEURL + '/Blog'
+DATAURL = SITEURL + '/DataChallenge'
+SITEURL = '' #uncomment for local development
 PATH = 'content'
 
 TIMEZONE = 'US/Central'
