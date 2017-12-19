@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+{% include 'index-header.html'%}
+
+<body>
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i> Menu
+    </span>
+
+{% include 'body-header.html'%}
+
+  	<div class="content-wrapper__full">
+      	<div class="content-wrapper__inner">
+          	<h1 id="about">About us</h1>
+          	<p>
+            	Our group consists of about 30 physicists at many levels (students, post-docs, lab scientists and faculties) and we are keen to share development effort in all aspects of the research, from software tools and algorithms to high level physics analysis methods.
+            	Experiments our group members are involved include  
+            	<a href="http://microboone.fnal.gov">MicroBooNE</a>, <a href="http://sbn-nd.fnal.gov">SBND</a>, 
+            	<a href="http://icarustrip.fnal.gov/about-icarus/">ICARUS</a>, <a href="http://next.ific.uv.es/next/">NEXT</a>,
+            	and <a href="http://www.dunescience.org">DUNE</a>. 
+         	</p>
+          	<p>
+            	Your inputs are very much welcome to improve any aspect of our effort, so please feel free to <a href={{ CONTACT }}> contact us</a>. You are welcome to join our group and/or participate in  our 
+           	<a href="https://groups.google.com/forum/#!forum/deeplearnphysics"> mailing list</a>!
+          	</p>
+
+	    	<h1> Active Participants (Short List) </h1>
+	    	<p>
+	    		Find a short list of active participants who entertain the group with the presentations of their work. These are contributors who  twist their heads around ML at least 50% of their FTE and make our our research interesting!
+	    	</p>
+		  	<table align="center" width="100%">                                                                                    
+    		<tr>
+      			<td>
+      				<div align="center"> <img class="user-image" src="{{ THEME_STATIC_DIR }}/images/kazu_round.png" title="Kazuhiro Terao"></div>
+			  		<p align="center" class="about">
+			  			<a href="codingkazu.com">Kazuhiro Terao</a> (organizer) <br>
+		        		Associate Staff Scientist<br>
+		        		<a href="https://www6.slac.stanford.edu/research/elementary-particle-physics">SLAC Lab.</a>, Menlo Park, CA<br>
+			        	<a href="http://microboone.fnal.gov">MicroBooNE</a>,
+		    	        <a href="http://icarustrip.fnal.gov/about-icarus/">ICARUS</a>,
+		        	    <a href="http://www.dunescience.org">DUNE</a>
+				    </p>
+			    </td>
+	      		<td>
+	      			<div align="center"> <img class="user-image" src="{{ THEME_STATIC_DIR }}/images/corey_round.jpg" title="Corey Adams"></div>
+				  	<p align="center" class="about">
+			        	<a href="mailto:coreyadams@fas.harvard.edu">Corey Adams</a> (co-leader) <br> 
+			        	Postdoctoral Research Fellow <br>
+			        	<a href="https://www.physics.harvard.edu">Harvard U.</a>, Cambridge, MA<br>
+			        	<a href="http://microboone.fnal.gov">MicroBooNE</a>,
+			            <a href="http://sbn-nd.fnal.gov">SBND</a>,
+			            <a href="http://next.ific.uv.es/next/">NEXT</a>
+				    </p>
+			    </td>
+		      	<td>
+		      		<div align="center"> <img class="user-image" src="{{ THEME_STATIC_DIR }}/images/taritree.jpg" title="Taritree Wongjirad"></div>
+				  	<p align="center" class="about">
+			        	<a href="Taritree.Wongjirad@tufts.edu"> Taritree Wongjirad</a> (co-leader) <br> 
+			        	Assistant Professor (PI) <br>
+			        	<a href="http://as.tufts.edu/physics/">Tufts U.</a>, Medford, MA <br>
+			        	<a href="http://microboone.fnal.gov">MicroBooNE</a>,
+			        	<a href="http://sbn-nd.fnal.gov">SBND</a>,
+			            <a href="http://www.dunescience.org">DUNE</a>
+				    </p>
+			    </td>
+			</tr>
+	        <tr>
+		      	<td>
+		      		<div align="center"> <img class="user-image" src="{{ THEME_STATIC_DIR }}/images/noimage.png" title="Ralista Sharankova"></div>
+				  	<p align="center" class="about">
+			        	<a href="Ralitsa.Sharankova@tufts.edu"> Ralista Sharankova</a><br> 
+			        	Postdoctoral Scholar <br>
+			        	<a href="http://as.tufts.edu/physics/">Tufts U.</a>, Medford, MA <br>
+			        	<a href="http://microboone.fnal.gov">MicroBooNE</a>,
+			        	<a href="http://sbn-nd.fnal.gov">SBND</a>,
+			            <a href="http://www.dunescience.org">DUNE</a>
+				    </p>
+			    </td>
+		      	<td>
+		      		<div align="center"> <img class="user-image" src="{{ THEME_STATIC_DIR }}/images/RuiAn.png" title="Rui An"></div>
+				  	<p align="center" class="about">
+			        	<a href="ran4@hawk.iit.edu"> Rui An</a><br> 
+			        	Graduate Student <br>
+			        	<a href="https://science.iit.edu/physics">IIT</a>, Chicago, IL <br>
+			        	<a href="http://microboone.fnal.gov">MicroBooNE</a>,
+			        	<a href="http://sbn-nd.fnal.gov">SBND</a>
+				    </p>
+			    </td>
+		      	<td>
+		      		<div align="center"> <img class="user-image" src="{{ THEME_STATIC_DIR }}/images/SamanthaFehlberg.jpg" title="Samantha Sword-Fehlberg"></div>
+				  	<p align="center" class="about">
+			        	<a href="fehlberg@nmsu.edu"> Samantha Sword-Fehlberg</a><br> 
+			        	Graduate Student <br>
+			        	<a href="http://physics.nmsu.edu">NMSU</a>, Las Cruces, NM<br>
+			        	<a href="http://microboone.fnal.gov">MicroBooNE</a>,
+			        	<a href="http://sbn-nd.fnal.gov">SBND</a>
+				    </p>
+			    </td>
+			</tr>
+			<tr>
+		      	<td>
+		      		<div align="center"> <img class="user-image" src="{{ THEME_STATIC_DIR }}/images/jiwon.jpg" title="Ji Won Park"></div>
+				  	<p align="center" class="about">
+			        	<a href="jwp@stanford.edu"> Ji Won Park</a><br> 
+			        	Graduate Student <br>
+			        	<a href="https://physics.stanford.edu">Stanford U</a>, Stanford, CA<br>
+			        	<a href="http://microboone.fnal.gov">MicroBooNE</a>,
+			            <a href="http://icarustrip.fnal.gov/about-icarus/">ICARUS</a>,
+			            <a href="http://www.dunescience.org">DUNE</a>
+				    </p>
+			    </td>
+	        </tr>                                                                             
+		</table>  
+	</div>
+</div>
+
+
+{% include 'body-footer.html'%}
+
+{% include 'scripts.html'%}
+<!--
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/main.js"></script>
+-->
+  </div>
+</body>
+</html>

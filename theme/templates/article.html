@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+{% include 'index-header.html'%}
+
+<body>
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i> Menu
+    </span>
+
+{% include 'body-header.html'%}
+
+  	<div class="content-wrapper__full">
+      	<div class="content-wrapper__inner">
+        <h1 id="research">Research</h1>
+        	<p>
+        	 	We are a group of particle physicists interested in learning the nature of elementary particles, the building blocks of matters in the space, and its implication to our understanding about our universe. Currently we are interested in a particular type of detectors called 
+        	 	<a href="https://en.wikipedia.org/wiki/Time_projection_chamber">time projection chambers (TPCs)</a>.
+        	 	A TPC is essentially a "camera" which allows 2D or 3D <i>"imaging"</i> of charged particle trajectories at a few millimeter scale spatial resolution with calorimetry (energy deposition as a particle traverses in the detector) information. This detailed image data can tell us more about the physics nature of particles than other classic particle detectors and shed light to discovering new physics phenomenon never seen before.
+        	</p>
+        	<p>
+        		<strong>Our research focus</strong> is to leverage ML techniques for TPC data reconstruction and analysis.
+        	</p>
+        	<p>
+        	 	<div class="image" align="center">
+	    	    	<img src="{{ THEME_STATIC_DIR }}/images/nuevent1.png" width="90%" title="MicroBooNE 2D Display"> 
+    		      	<div class="caption"> 
+  		      		<p>
+        	  			Neutrino interaction candidate in <a href="http://microboone.fnal.gov">MicroBooNE</a> liquid-argon (LAr) TPC detector. The detector consists of three wire planes where each records one 2D projection image. This image is from one of three wire planes [<a href="http://inspirehep.net/record/1422050?ln=en">source</a> and credits due to MicroBooNE experiment].
+        	  		</p>
+	     	     	</div>
+				</div>
+			</p>
+		</div>
+     	<div class="content-wrapper__inner">
+		    <h1>Our Data: Imaging Particles in TPCs</h1>
+		    <p>
+	    	    While TPCs are very powerful detector technology, understanding the detector response and analyzing its complex and highly detailed (= huge in size) data is challenging. <i>Raw data</i> from a typical TPC is either 2D or 3D array of digits. While there is more than one type of TPC, they can be all classified into two categories in terms of its data representations. One is a "wire detector", and the other is a "pixel detector". The former consists of multiple wire-planes that record 2D projection image of particle trajectories. An example of this detectory is <a href="http://microboone.fnal.gov">MicroBooNE</a>, <a href="http://sbn-nd.fnal.gov">SBND</a>, <a href="http://icarustrip.fnal.gov/about-icarus/">ICARUS</a> and <a href="http://www.dunescience.org">DUNE</a> far detector. The above example event display from <a href="http://microboone.fnal.gov">MicroBooNE</a> gives you an idea. These wire planes have different 2D orientation angles, and data from all planes can be put together to reconstruct the 3D particle trajectories. You can see an instance of 3D reconstruction result using <a href="http://www.phy.bnl.gov/wire-cell/">WireCell</a> from <a href="http://microboone.fnal.gov">MicroBooNE</a> below.
+	   	    </p>
+			<p>
+				<div class="image">
+	    	        <iframe width="100%" height="420px" src="https://www.youtube.com/embed/vaoaeEBRYec?autoplay=1&playlist=vaoaeEBRYec&loop=1&controls=0"></iframe>
+	    	    </div>
+			</p>
+			<p>
+				The other type, a "pixel detector", is slightly different. The detector records 3D particle trajectories as a series of a simple 2D static image just like how we record a movie with our cell phone. In this case the raw data is naturally 3D by simply stacking images along the time-axis, and requires no data reconstruction to just obtain 3D image data. The hardware challenge to make a pixel detector possible is, however, much harder than a wire detector. A pixel detector is employed in <a href="http://next.ific.uv.es/next/">NEXT</a> experiment, and is planned to be used for <a href="http://www.dunescience.org">DUNE</a> near detector. Below you can find an example particle trajectories in a pixel detector from simplified simulation.
+			</p>
+			<p>
+       	 		<div class="image" align="center">
+	    	    	<img src="{{ THEME_STATIC_DIR }}/images/simulation3d.png" width="45%" title="3D Simulation"> 
+	    	    	<img src="{{ THEME_STATIC_DIR }}/images/simulation3d_label.png" width="45%" title="3D Simulation Label"> 
+    		      	<div class="caption"> 
+    		      	<p>
+        	  			Left: simulated (non-neutrino) interaction in 3D volume with 2 gamma rays, muon and electron. Right: clustered charge deposition by particle instance (different colors indicate separate clusters). Data processing and visualization using our <a href="https://github.com/DeepLearnPhysics/larcv2">larcv</a> software toolkit.
+        	  		</p>
+	     	     	</div>
+				</div>
+			</p>
+			<p>
+
+			</p>
+
+		</div>
+		<div class="content-wrapper__inner">
+		    <h1>ML for Data Reconstruction</h1>
+			<p>
+				So given that (very brief) description of data, what do we want to use ML for? The common physics goal for (so far) all involved experiments is simple: we want to isolate a "signal interaction" that can induce arbitrary number of particles by identifying individual particle trajectory with deposited energy in the detector. In particular here's a list of specific items our group is working on.
+			</p>
+			<h2>2D/3D Pattern Recognition</h2>
+			<p>
+				We apply deep convolutional neural networks to 2D image and 3D volmetrics data to extract interesting <i>feature</i> information. We have a successful demonstration of <a href="faster-rcnn">object detection network</a> to localize neutrino interaction <a href="https://arxiv.org/abs/1611.05531">published</a> as the first <a href="http://microboone.fnal.gov">MicroBooNE</a> collaboration paper. We have applied 2D semantic segmentation (pixel-level object categorization) network which result was shown at <a href="https://indico.fnal.gov/event/9942/session/4/contribution/68/material/slides/0.pdf">WIN 2017</a> conference. Recently we showed a demonstration of segmentation technique in <a href="https://indico.fnal.gov/event/15722/session/0/contribution/2/material/slides/1.pdf">3D detector</a>. Ultimately we aim to perform vertex position estimation and clustering of energy depositions at a particle-instance level. You can find the example in the above right figure of 3D particle simulation.
+			</p>
+			<h2>3D Space-point Reconstruction</h2>
+			<p>
+				TPCs are ultimately 3D imaging detector, and the reconstruction of precise 3D points in a wire detector remains as a challenging task. Our group members are studying how this can be solved using deep neural networks in a way training a network to learn cross-plane pixel-to-pixel correlation. This technique, once established, can predict 3D points from correlated 2D pixels of different projections. In addition, since it learns the pixel correlation, it can potentially cluster correlated 3D points together, enabling an instance-level particle clustering. 
+			</p>
+			<h2>Understanding Data/Simulation Discrepancies</h2>
+			<p>
+				In general simulation tools in our field (particle physics) is quite good. We simulate individual particle interactions to simulate the whole world, which is computationally expensive "bottoms-up" approach. While this technique is powerful the simulation can never be perfect and there remain subtle discrepancies with real detector data. This is a problem to many of our applications that rely on supervised learning with simulation sample. In our group we are studying ways to identify such discrepancies in terms of simulation nuisance parameters and to quantify the magnitude, essentially systematic uncertainties, for physics analysis applications. 
+			</p>
+	    </div>
+  	</div>
+
+{% include 'body-footer.html'%}
+
+{% include 'scripts.html'%}
+<!--
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/main.js"></script>
+-->
+
+</body>
+</html>
