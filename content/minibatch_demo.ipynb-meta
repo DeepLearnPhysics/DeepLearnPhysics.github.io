@@ -1,0 +1,7 @@
+Title: How to Implement Minibatching in Tensorflow
+Slug: minibatch
+Date: 2017-12-22
+Category: Minibatch
+Tags: MNIST, minibatch
+Author: Ji Won Park
+Summary: A demonstration of minibatch implementation in Tensorflow, comparing training with and without minibatches on the MNIST dataset as an example
