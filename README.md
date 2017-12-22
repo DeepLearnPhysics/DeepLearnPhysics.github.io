@@ -23,7 +23,7 @@ By compilation we mean to generate static HTMLs. This is fairly simple:
 Our development work is a process of modify-compile-check. The **first to-do** is:
 1. Open `pelicanconf.py` and **uncomment** the line `#SITEURL = ''`. This generates HTMLs to be viewed locally.
 2. `make devserver` then access `localhost:8000` on your browser. This runs a virtual pelican web server on your machine and allows you to browse the updated website contents all on your laptop.
-3. Make modifications you wish to make. `contents` directory is where you make a _blog post_.
+3. Make modifications you wish to make. `content` directory is where you make a _blog post_.
 4. `make html` will update your local static website.
 
 ### Publish
