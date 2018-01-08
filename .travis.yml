@@ -1,0 +1,16 @@
+language: python
+branches:
+  only:
+    - develop
+install:
+- pip install pelican
+- pip install ghp-import
+- pip install markdown
+- pip install jupyter notebook
+- pip install ipython
+- pip install nbconvert
+script:
+- make html
+env:
+  global:
+  - secure: "UxIG1W8kNUlMhnqRVefmJzKO41341nNQxNWTudsrSeqUUpHMsQ7AOX0pz9ICKbRt2NiOHFarqk8hxc8EVG6VsU8uYm429VPCCVMmMEY8Lo4HtBx7t8DFqnlAV9wxAeYU/Jo/uhtkrGq7XRJTloy6Ti+mlzr7qTBEU3SddrfMZk3mhpA5b84JrpGd80e4de6OtYiN5G9VHIVKWyjBZsOu9wKIaWpnmtvvGQgrAEHSc4dRuWmYzZEqQWSfQb4oFoo8clfKhj9Rq8mMFdv9tIfxZcNa/VXpfP42R253SM19pLeUt23ViWYgGLxSeM8opr37p/Fb9gyQpISbT691FfzCgId17jTvljzAx/zgvxbeWVYU483gm1jhOpBQkHujz3GxDhqIGLM3pYrNZut/StvJoKjHvvXPACfd+gojjigL6J9m7ztzMjXTJUNzclKrtsz5z0wsijhIXaArfJz4sKUVruKFpEF0S+Loc2Kv4WZi2quwyWdbTQNEC6nfRME1CFCfZQKgswKnh0ql82czYvGCjFzoWMGy1fp3mSwzNr8JE0dPOGYff3gX34id86BqyxaILWsupS0nJYoxTL9r6oezqLQIvuNkzyzFE0eXqKl65O1maVztbnBnzrVirRVjvYOqUfuEvJmhH65KII8vfRN5QEydLojghlsescerTWvhzLw="
