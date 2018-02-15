@@ -9,7 +9,7 @@ CONTACT = 'mailto:contact@deeplearnphysics.org'
 SITEURL = 'http://deeplearnphysics.org'
 BLOGURL = SITEURL + '/Blog'
 DATAURL = SITEURL + '/DataChallenge'
-SITEURL = '' #uncomment for local development
+#SITEURL = '' #uncomment for local development
 PATH = 'content'
 
 TIMEZONE = 'US/Central'
